@@ -1,0 +1,13 @@
+ENV="development"
+DEBUG=True
+APP_HOST="0.0.0.0"
+APP_PORT=8000
+WRITER_DB_URL: str = f"mysql+aiomysql://fastapi:fastapi@localhost:3306/fastapi"
+READER_DB_URL: str = f"mysql+aiomysql://fastapi:fastapi@localhost:3306/fastapi"
+JWT_SECRET_KEY="fastapi"
+JWT_ALGORITHM="HS256"
+SENTRY_SDN=None
+CELERY_BROKER_URL="amqp://user:bitnami@localhost:5672/"
+CELERY_BACKEND_URL="redis://:password123@localhost:6379/0"
+REDIS_HOST="localhost"
+REDIS_PORT=6379
